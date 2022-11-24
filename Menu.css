@@ -1,0 +1,144 @@
+@font-face{
+    font-family: 'Manrope';
+    src: url(Manrope_VariableFont_wght.ttf);
+}
+*, *::before,*::after{
+    box-sizing: border-box;
+    font-family: Manrope;
+    font-size: 18px;
+}
+body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+}
+/*header*/
+header .logo{
+    display: flex;
+    width: 78%;
+    justify-content: space-around;
+}
+
+section{
+    width: 100vw;
+}
+.logo img{
+    width: 183px;
+    height: 88px;
+    margin:0;
+}
+
+.logo ul{
+    list-style-type: none;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-left: 0;
+}
+.logo ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 1.5s;
+    border-bottom: 2px solid transparent;
+}
+.logo ul li a[href="Menu.html"]{
+    font-size: 1.4em;
+    border-bottom: 2px solid black;
+}
+
+.logo ul li a:hover{
+    border-bottom: 2px solid black;
+}
+.logo ul li {
+    margin: 8px;
+    font-weight: bold;
+}
+button{
+    background-color: #56A299;
+    border: none;
+    border-radius: 120px;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+}
+h1{
+display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+/*Адаптив*/
+
+.hamburger{
+    display: none;
+}
+.vertical_menu{
+    display:none;
+}
+@media screen and (max-width: 515px) {
+    section {
+        width: 100vw;
+    }
+
+    header .logo {
+        justify-content: flex-start;
+        margin: 8% 0 0 -5%;
+    }
+
+    .logo ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 9%;
+        top: 5%;
+        cursor: pointer;
+    }
+.vertical_menu {
+    display: block;
+    position: absolute;
+    width: 52%;
+    top: 0;
+    left: -60%;
+    height: 100vh;
+    /*background-color: #55c2c2;*/
+    background: rgb(251,212,190);
+    background: linear-gradient(120deg, rgba(251,212,190,1) 0%, rgba(51,121,113,0.9108018207282913) 49%, rgba(86,162,153,1) 100%);
+    opacity: .8;
+    transition-duration: 1.5s;
+}
+    .vertical_menu img{
+        position: absolute;
+        top: 0;
+        right: 5%;
+        cursor: pointer;
+    }
+    .vertical_menu a{
+        text-decoration: none;
+        color: black;
+    }
+    .vertical_menu ul{
+        list-style-type: none;
+        margin: 33% 0 0 -20px;
+    }
+    .vertical_menu li{
+        margin-bottom: 20px;
+    }
+    .vertical_menu li a{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .vertical_menu ul li a[href="Menu.html"]{
+        font-size: 1.4em;
+        border-bottom: 2px solid black;
+    }
+h1{
+    text-align: center;
+}
+}

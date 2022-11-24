@@ -19,6 +19,7 @@ header .logo{
     width: 78%;
     justify-content: space-around;
 }
+
 .container{
     width: 100%;
     margin: auto;
@@ -44,8 +45,12 @@ header .logo{
     color: black;
     transition: 1.5s;
     border-bottom: 2px solid transparent;
-
 }
+.logo ul li a[href="index.html"]{
+    font-size: 1.4em;
+    border-bottom: 2px solid black;
+}
+
 .logo ul li a:hover{
     border-bottom: 2px solid black;
 }
@@ -641,6 +646,10 @@ header .logo{
     font-weight: bold;
     font-size: 20px;
 }
+.vertical_menu ul li a[href="index.html"]{
+    font-size: 1.4em;
+    border-bottom: 2px solid black;
+}
 .healthy_food img{
     width: 100%;
     height: 100%;
@@ -799,6 +808,10 @@ header{
         font-weight: bold;
         font-size: 20px;
     }
+.vertical_menu ul li a[href="index.html"]{
+    font-size: 1.4em;
+    border-bottom: 2px solid black;
+}
 .pancake img{
     width: 101%;
     height: 101%;
