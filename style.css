@@ -70,6 +70,9 @@ button{
 }
 
 /*section1*/
+.get_started  a{
+    text-decoration: none;
+}
 .fly{
     width: 100%;
     display: flex;

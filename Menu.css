@@ -88,19 +88,14 @@ display: flex;
 
 }
 .categories > div{
-    height: 300px;
+    height: 350px;
 
-}
-.saladBlock img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%
 }
 .salads img, .hotMeal img, .mainDish img, .bakes img, .desserts img,.cocktails img{
     object-fit: cover;
     height: 100%;
     width: 100%;
-    position: relative;
+    cursor: pointer;
 }
 .mainDish img, .bakes img{
     object-position: 88%;
@@ -108,11 +103,42 @@ display: flex;
 .desserts img{
     object-position: 30%;
 }
-.saladBlock{
-    height: 40%;
-    background-color: red;
-    /*position: absolute;*/
+
+.dishes{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+
 }
+.block{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(251,212,190,0.8533788515406162) 0%, rgba(51,121,113,0.9108018207282913) 49%, rgba(86,162,153,1) 100%);
+    height: 30%;
+    position: absolute;
+    bottom: -30%;
+    border-radius: 50px 50px 0 0;
+    transition: .4s
+}
+.dishes:hover .block{
+bottom: 0;
+}
+.block span{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: black;
+    cursor:pointer;
+}
+.block span:active{
+    color: #afacac;
+}
+
+
 
 
 
@@ -156,6 +182,7 @@ display: flex;
     background: linear-gradient(120deg, rgba(251,212,190,1) 0%, rgba(51,121,113,0.9108018207282913) 49%, rgba(86,162,153,1) 100%);
     opacity: .8;
     transition-duration: 1.5s;
+    z-index: 100;
 }
     .vertical_menu img{
         position: absolute;
