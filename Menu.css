@@ -79,6 +79,50 @@ display: flex;
 .vertical_menu{
     display:none;
 }
+.categories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3%;
+    margin: 0 3% 0 3%;
+
+}
+.categories > div{
+    height: 300px;
+
+}
+.saladBlock img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%
+}
+.salads img, .hotMeal img, .mainDish img, .bakes img, .desserts img,.cocktails img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.mainDish img, .bakes img{
+    object-position: 88%;
+}
+.desserts img{
+    object-position: 30%;
+}
+.saladBlock{
+    height: 40%;
+    background-color: red;
+    /*position: absolute;*/
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 515px) {
     section {
         width: 100vw;
