@@ -16,7 +16,7 @@ body{
 /*header*/
 header .logo{
     display: flex;
-    width: 78%;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -626,7 +626,7 @@ header .logo{
     background: rgb(251,212,190);
     background: linear-gradient(120deg, rgba(251,212,190,1) 0%, rgba(51,121,113,0.9108018207282913) 49%, rgba(86,162,153,1) 100%);
     opacity: .8;
-    transition-duration: 1.5s;
+    transition-duration: 1s;
 }
 .vertical_menu img{
     position: absolute;
@@ -788,7 +788,7 @@ header{
         background: rgb(251,212,190);
         background: linear-gradient(120deg, rgba(251,212,190,1) 0%, rgba(51,121,113,0.9108018207282913) 49%, rgba(86,162,153,1) 100%);
         opacity: .8;
-        transition-duration: 1.5s;
+        transition-duration: 1s;
 }
     .vertical_menu img{
         position: absolute;
