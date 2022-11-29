@@ -87,10 +87,6 @@ display: flex;
     margin: 0 3% 0 3%;
 
 }
-.categories > div{
-    height: 350px;
-
-}
 .salads img, .hotMeal img, .mainDish img, .bakes img, .desserts img,.cocktails img{
     object-fit: cover;
     height: 100%;
@@ -138,14 +134,52 @@ bottom: 0;
     color: #afacac;
 }
 
-
-
-
-
-
-
-
-
+/*footer*/
+footer{
+    background-color: #F5F5F5;
+    margin-top: 10%;
+}
+.information{
+    display: flex;
+    height: 477px;
+    width: 100vw;
+    border-bottom: 2px solid #DDDDDD;
+}
+.copyright{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.facebook{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #56A299;
+}
+.column1, .column2, .column3{
+    width: 200px;
+    margin: auto;
+}
+.links_line img {
+    margin-right: 10px;
+}
+input[type^="image"]{
+    cursor: pointer;
+    position: absolute;
+    right: -5%;
+    top: 25%;
+}
+input[type^="email"]{
+    border: none;
+    height: 50px;
+    width: 219px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-left: 6px;
+    box-shadow: 0 0 5px grey;
+}
+.email_button{
+    position: relative;
+}
 
 
 
@@ -229,6 +263,63 @@ h1{
 .block span{
     font-weight: normal;
 }
+    .block{
+        width: 100%;
+        background: linear-gradient(180deg, rgba(251,212,190,0.8533788515406162) 0%, rgba(51,121,113,0.9108018207282913) 49%, rgba(86,162,153,1) 100%);
+        height: 30%;
+        position: absolute;
+        bottom: -30%;
+        border-radius: 50px 50px 0 0;
+        transition: .4s
+    }
+    .dishes:hover .block{
+        bottom: 0;
+    }
+/*    footer*/
+    footer{
+        margin-top: 40%;
+
+    }
+    .foot_Logo{
+        display: none;
+    }
+    .information{
+        display: grid;
+        margin-left: 10%;
+        align-content: center;
+        width: 89vw;
+        justify-content: center;
+    }
+    .column3{
+        grid-row-start: 2;
+        margin: 0;
+    }
+    .column1{
+        grid-row-start: 3;
+        margin: 0;
+    }
+    .column2{
+        grid-row-start: 1;
+        margin: 0;
+    }
+    .email_button{
+        margin-top: 20%;
+        margin-left: -20%;
+    }
+    input[type="image"]{
+        margin-right: 20%;
+    }
+    .email_button{
+        display: none;
+    }
+    .column2, .column3 > p, h3{
+        text-align: center;
+    }
+    .links_line{
+        display: flex;
+        justify-content: center;
+
+    }
 }
 @media screen and (min-width: 515px) and (max-width: 768px) {
     .logo ul {
