@@ -149,6 +149,29 @@ input[type^="email"]{
 .email_button{
     position: relative;
 }
+/*cart*/
+.topLine .cart {
+    display: flex;
+    flex-direction: column;
+}
+.cart img[alt="Cap"]{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50%;
+}
+.cart{
+    position: relative;
+}
+.cart img[alt="teapot"] {
+    width: 100px;
+    height: 90px;
+}
+.topLine{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5% 0 5%;
+}
 
 
 

@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Салаты и закуски</title>
     <link rel="stylesheet" href="saladas.css">
+    <script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+
 </head>
 <body>
     <div class="hamburger">
@@ -47,7 +49,69 @@
         </div>
     </header>
 <section class="All_item">
-    <a href="Menu.html"><button>назад</button></a>
+    <div class="topLine">
+        <a href="Menu.html"> <button>назад</button></a>
+        <div class="cart">
+            <div class="cap"><img src="image/cap.png" alt="Cap"></div>
+            <div class="teapot"><img src="image/teapot.png" alt="teapot"></div>
+        </div>
+        <script>
+            $('.item__button').on('click',function(){
+                let cap = $('.cap');
+                let cart = $('.teapot');
+                let imgtodrag = $(this)
+                .find('.item__image')
+                $(this).addClass('chosen').clone().offset({
+                    top:  $('.chosen').offset().top,
+                    left:  $('.chosen').offset().left,
+                })
+                    .css({
+                        position:  'absolute',
+                        'z-index':  '1',
+                    }).prependTo('.All_item').animate({  // Почему если, например, вставлять перед body стили не сохраняются?
+                    top: cart.offset().top - 90,
+                    left: cart.offset().left - 5,
+                    width: '50px',
+                    height: '50px',
+                    'font-size': '.8em'
+                }, {
+
+                    start: setTimeout(function (){
+                        cap.css({
+                            transform:'rotate(90deg)',
+                            transition: '.4s',
+                        })
+                    }, 200),
+
+                    duration: 600,
+                    complete: function () {
+                        $(this).css({
+                            opacity: '0',
+                            top: '90px',
+                            'transition-duration': '.7s'
+                        })
+                    },
+                    done: setTimeout(function (){
+
+                        cap.css({
+                            transform: 'rotate(0deg)'
+                        })
+
+                    },1000)
+                })
+
+                $('.item button').removeClass(function(index, currentClass){
+                    let removedClass;
+                    if(currentClass === "chosen"){
+                        removedClass = 'chosen';
+                    }
+                    return removedClass;
+
+                })
+
+            })
+        </script>
+    </div>
     <h1>Салаты и закуски</h1>
     <div class="firstRow">
         <div class="item">
