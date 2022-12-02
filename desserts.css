@@ -277,11 +277,6 @@ input[type^="email"]{
 .item{
     margin-bottom: 10%;
 }
-    img{
-        height: 200px;
-        width: 100%;
-
-    }
     /*cart*/
     .topLine .cart {
         display: flex;
