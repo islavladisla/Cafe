@@ -51,9 +51,10 @@
     <div class="topLine">
         <a href="Menu.html"> <button>назад</button></a>
         <div class="cart">
-            <div class="cap"><img src="image/cap.png" alt="Cap"></div>
             <div class="teapot"><img src="image/teapot.png" alt="teapot"></div>
+            <div class="cap"><img src="image/cap.png" alt="Cap"></div>
         </div>
+
 
 
     </div>
@@ -162,48 +163,6 @@
         </div>
         <p class="copyright">&#169 2022 Все права защищены</p>
     </footer>
-    <script>
-        $('.item__description button').on('click', function(){
-            let cap = $('.cap');
-            let cart = $('.teapot')
-            $('.item__image').addClass('chosen').clone().offset({
-                top: $('.chosen').offset().top,
-                left: $('.chosen').offset().left,
-            }).css({
-                position: 'absolute',
-                'z-index': '30',
-            }).prependTo('.item').animate({
-                top: cart.offset().top - 100,
-                left: cart.offset().left + 29,
-                width: '40px',
-                height: '40px',
-            },
-                {
-
-                    start: setTimeout(function (){
-                        cap.css({
-                            transform:'rotate(90deg)',
-                            transition: '.4s',
-                        })
-                    }, 200),
-
-                    duration: 600,
-                    complete: function () {
-                        $(this).css({
-                            opacity: '0',
-                            top: '90px',
-                            'transition-duration': '.7s'
-                        })
-                    },
-                    done: setTimeout(function (){
-
-                        cap.css({
-                            transform: 'rotate(0deg)',
-                        })
-
-                    },1000)
-                })
-        })
-    </script>
+    <script src="CartAnimation.js"></script>
 </body>
 </html>

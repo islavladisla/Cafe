@@ -155,16 +155,25 @@ input[type^="email"]{
 .email_button{
     position: relative;
 }
+.item img{
+    height:300px;
+}
 /*cart*/
 .topLine .cart {
     display: flex;
     flex-direction: column;
+    position: relative;
+
 }
-.cart img[alt="Cap"]{
+.cap{
+    position: absolute;
+    top: -46%;
+    right: 0;
+    transform-origin: right;
+}
+.cap img[alt="Cap"]{
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: -50%;
 }
 .cart{
     position: relative;
@@ -178,6 +187,8 @@ input[type^="email"]{
     justify-content: space-between;
     margin: 0 5% 0 5%;
 }
+
+/* end of cart*/
 
 
 
@@ -266,11 +277,40 @@ input[type^="email"]{
 .item{
     margin-bottom: 10%;
 }
-    .picture img{
+    img{
         height: 200px;
         width: 100%;
 
     }
+    /*cart*/
+    .topLine .cart {
+        display: flex;
+        flex-direction: column;
+    }
+    .cap{
+        position: absolute;
+        top: -46%;
+        right: 0;
+        transform-origin: right;
+    }
+    .cap img[alt="Cap"]{
+        width: 100px;
+        height: 100px;
+    }
+    .cart{
+        position: relative;
+    }
+    .cart img[alt="teapot"] {
+        width: 100px;
+        height: 90px;
+    }
+    .topLine{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5% 0 5%;
+    }
+
+    /* end of cart*/
     /*footer*/
     footer{
         margin-top: 40%;

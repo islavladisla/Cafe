@@ -160,11 +160,15 @@ input[type^="email"]{
     display: flex;
     flex-direction: column;
 }
-.cart img[alt="Cap"]{
+.cap{
+    position: absolute;
+    top: -46%;
+    right: 0;
+    transform-origin: right;
+}
+.cap img[alt="Cap"]{
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: -50%;
 }
 .cart{
     position: relative;
@@ -179,6 +183,7 @@ input[type^="email"]{
     margin: 0 5% 0 5%;
 }
 
+/* end of cart*/
 
 
 
