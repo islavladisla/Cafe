@@ -191,6 +191,7 @@ h1{
     margin-bottom: 4%;
     width: 80%;
     margin-left: 10%;
+    position: relative;
 }
 .section3description img{
     width: 378px;
@@ -202,6 +203,15 @@ h1{
 }
 .section3description__container p{
     margin-bottom: 10%;
+}
+.moreInfo{
+    position: absolute;
+    border: 2px solid red;
+    background-color: yellow;
+    top: 90%;
+    transition: 1.2s;
+    opacity: 0;
+    padding: 1%;
 }
 
 /*for all food cards*/
