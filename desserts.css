@@ -11,6 +11,7 @@ body{
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 
 }
 /*header*/
@@ -113,11 +114,13 @@ a[href*="Menu"] button{
 footer{
     background-color: #F5F5F5;
     margin-top: 10%;
+    width: 100%;
+
 }
 .information{
     display: flex;
     height: 477px;
-    width: 100vw;
+    width: 95%;
     border-bottom: 2px solid #DDDDDD;
 }
 .copyright{
@@ -140,8 +143,8 @@ footer{
 input[type^="image"]{
     cursor: pointer;
     position: absolute;
-    right: -5%;
-    top: 25%;
+    right: 10%;
+    top: 23%;
 }
 input[type^="email"]{
     border: none;
@@ -154,10 +157,12 @@ input[type^="email"]{
 }
 .email_button{
     position: relative;
+    margin-left: -20%;
 }
 .item img{
     height:300px;
 }
+
 /*cart*/
 .topLine .cart {
     display: flex;
@@ -187,13 +192,7 @@ input[type^="email"]{
     justify-content: space-between;
     margin: 0 5% 0 5%;
 }
-
 /* end of cart*/
-
-
-
-
-
 
 /*Адаптив*/
 
