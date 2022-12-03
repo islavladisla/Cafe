@@ -125,14 +125,16 @@
         <script>
             let info = document.querySelector('.moreInfo')
             let btn = document.querySelector('.section.more')
-            btn.addEventListener('click', function(a){
+            btn.addEventListener('click', function(e) {
                 info.style.opacity = '100%';
-                a.stopPropagation()
+                e.stopPropagation()
             })
             document.addEventListener('click', function(event) {
-                let e = document.querySelector('.moreInfo');
-                if (!e.contains(event.target)) e.style.opacity= "";
-            });
+                if (!info.contains(event.target))
+                info.style.opacity = "";
+            })
+
+
         </script>
     </section>
 
