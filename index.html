@@ -51,10 +51,15 @@
 
     <section class="section1">
         <div class="screensaver"><img src="image/background.jpg" alt="screensaver"></div>
-        <div class=section1__flexed><h1>Лучший вкус любимых блюд</h1>
-            <p> В нашем кафе Вы можете попробовать множество блюд русской, европейской и азиатской кухни.  
-                Мировая классика в нашем исполнении приятно удивит, и мы будем ждать в гости снова и снова!
-                В нашем уютном зале Вы хорошо проведёте время с семьей или друзьями, а банкетный зал радушно размемтит гостей любого торжества.  </p>
+        <div class=section1__flexed id="'about"><h1>Лучший вкус любимых блюд</h1>
+            <p> В нашем кафе Вы можете попробовать множество блюд русской, европейской и азиатской кухни.
+                Мировая классика в нашем исполнении приятно удивит, и мы будем ждать в гости снова и снова!</p>
+            <p>«Cafe» работает для Вас с 2010 года. В нашем уютном зале Вы хорошо проведёте время с
+                семьей или друзьями, а банкетный зал радушно размемтит гостей любого торжества.
+                Для Вас: свадебные банкеты, юбилеи, оформление и декорирование зала, живая музыка,
+                вежливый персонал, удобная охраняемая парковка.</p>
+            <p> Банкетный зал рассчитан на комфортную рассадку до 100 человек,
+                основной зал - на 50, летняя веранда рассчитана на 40 мест.</p>
         </div>
     </section>
     <div class="get_started">
@@ -72,7 +77,8 @@
             <a href="https://www.instagram.com" target="_blank" title="instagram"><img src="image/instagram.svg" alt="instagram"></a>
             <a href="https://twitter.com/home" target="_blank" title="twitter"><img src="image/twitter.svg" alt="twitter"></a></div>
     </div>
-    <section class="contacts" id="contacts">
+
+    <!--<section class="contacts" id="contacts">
         <div class="work work__time"><img src="image/time.svg" alt="time">
             <p>с 10:00 до 23:00</p>
             <h6>Рабочее время</h6>
@@ -85,17 +91,20 @@
             <p>8(4842)76-55-75</p>
             <h6>Наш телефон</h6>
         </div>
+    </section>-->
 
-    </section>
     <section class="section3description">
-            <div class="healthy_food"><img src="image/section2.jpg" alt="healthy food"></div>
+            <div class="healthy_food" id="about"><img src="image/section2.jpg" alt="healthy food"></div>
             <div class="section3description__container">
                 <h6>Услуги</h6>
-                <h2>Loremg elit. Consequatur, ex illo inventore maxime non
-                    rem.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deleniti dicta esse iste, molestias
-                    offiveniam vero voluptas voluptatem voluptatibus.
-                    </p>
+                <h2>Мы приготовили для Вас</h2>
+                <ul>
+                    <li>Живая музыка</li>
+                    <li>Ведущий торжеств</li>
+                    <li>Фотозона и фотограф</li>
+                    <li>Конкурсы</li>
+                    <li>Подарки</li>
+                </ul>
                 <button class="section more">Подробнее
                     <div class="arrow">
                         <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,9 +125,14 @@
         <script>
             let info = document.querySelector('.moreInfo')
             let btn = document.querySelector('.section.more')
-            btn.addEventListener('click', function(){
+            btn.addEventListener('click', function(a){
                 info.style.opacity = '100%';
+                a.stopPropagation()
             })
+            document.addEventListener('click', function(event) {
+                let e = document.querySelector('.moreInfo');
+                if (!e.contains(event.target)) e.style.opacity= "";
+            });
         </script>
     </section>
 
@@ -288,9 +302,16 @@
         <div class="testimonial">
             <div class="testimonial__person">
                 <div class="testimonial__img"><img  id="r1" src="image/person.jpg" width="80" height="80" alt="person"></div>
-                <h3>William Jonson</h3>
-                <small>Должность</small>
-                <div class="comment"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate!</div>
+                <h3>Алексей</h3>
+                <small>Посетитель</small>
+                <div class="comment">
+                    Добрый день! 27.07.2019г. гуляли свадьбу в вашем замечательном заведении. Выражаю благодарность
+                    и восхищение кухней, сервировкой и обслуживанием.
+                    Все было на высшем уровне! Официантам отдельное
+                    спасибо! Наши гости остались довольны, а это самое
+                    главное. Всем рекомендую Ваше кафе!
+                    Все было вкусно и красиво. Спасибо большое!
+                </div>
                 <div class="comments_switch">
                     <img src="image/left_arrow.svg" alt="ToLeft">
                     <img src="image/right_arrow.svg" alt="ToRight">
@@ -304,7 +325,7 @@
         <div class="picture"><img src="image/sec5_front.png" alt="Grill"></div>
             <div class="feedback">
                 <h2>Подпишитесь на наши новости</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                <h3>Узнайте о наших акциях и новинках первыми!</h3>
                 <div class="formSent">
                     <form action="">
                         <input type="email" placeholder="Введите вашу почту">
@@ -319,7 +340,7 @@
                 <div class="column1">
                     <div class="foot_Logo">
                         <a href="index.html"><img src="image/logo.svg" alt="Logo" title="Cafe"></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, maxime?</p>
+                        <p>Вкусно, как дома</p>
                     </div>
                     <div class="links_line">
                         <a href="https://ru-ru.facebook.com/" target="_blank" title="facebook"><img src="image/facebook.svg" alt="facebook"></a>
