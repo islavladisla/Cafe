@@ -199,8 +199,10 @@ h1{
     height: 286px;
 }
 .section3description__container{
-    margin:32px;
-    max-width: 500px;
+    margin:2%;
+}
+.section3description__container h6{
+    text-align: center;
 }
 .section3description__container p{
     margin-bottom: 10%;
@@ -300,6 +302,9 @@ h1{
 }
 .item__button{
     flex-shrink: 0;
+}
+a[href="Menu.html"]{
+    text-decoration: none;
 }
 /*section4 food order*/
 
@@ -409,6 +414,9 @@ h1{
     position: relative;
     display: flex;
     justify-content: flex-end;
+}
+.feedback{
+    z-index: 20;
 }
 .section5 img[alt="Grill"]{
     position: absolute;
@@ -579,7 +587,6 @@ header .logo{
     width: 100%;
     margin: 0;
 }
-
 .healthy_food{
         position: absolute;
         top: 0;
@@ -832,6 +839,53 @@ header{
     font-size: 1.4em;
     border-bottom: 2px solid black;
 }
+.section3description{
+    position: relative;
+    width: 100%;
+    margin: 5% 2% 15% 2%;
+    justify-content: center;
+}
+.section.more{
+    position: absolute;
+    left: 40%;
+    top: 93%;
+}
+.section3description__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.section3description__container ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section3description__container h6 {
+        font-size: 30px;
+        color: #2ca799;
+        text-shadow: 0 1px 10px grey;
+}
+
+.firstRow, .secondRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+}
+
+    .healthy_food{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -101;
+        opacity: .5;
+        height: 100%;
+    }
+    .healthy_food img{
+        object-fit: cover;
+        width: 94%;
+    }
 .pancake img{
     width: 101%;
     height: 101%;
@@ -845,7 +899,7 @@ header{
 }
 .comments_switch{
     position: absolute;
-    top: 100%;
+    top: 92%;
     left: 40%;
 }
 .section5{
@@ -860,6 +914,7 @@ header{
 }
 .review{
    height: 600px;
+    margin-bottom: 8%;
 }
 .picture{
         position: absolute;
@@ -877,9 +932,9 @@ header{
 }
 .formSent form input[type="submit"]{
     position: absolute;
-    width: 43%;
-    right: 37%;
-    top: 120%;
+    width: 47%;
+    right: 2%;
+    top: 42%;
     font-size: .7em;
 }
 .feedback h3, h2{
@@ -902,14 +957,29 @@ footer{
     margin: auto;
 }
 .email_button{
-    margin-left: -20%;
+    margin-left: -10%;
 }
 .email_button form input[type="email"]{
+    position: relative;
+    bottom: -40px;
+}
+.column3{
     position: relative;
 }
 .email_button form input[type="image"]{
     position: absolute;
-    right: 11%;
+    right: 3%;
+    top:50px;
+}  }
+/*For comment*/
+@media screen and (max-width: 1150px) {
+    .testimonial__person {
+        margin-right: 2%;
+        margin-left: 0;
+    }
 }
-
+@media screen and (max-width: 1000px){
+.pancake{
+    display: none;
+    }
 }
