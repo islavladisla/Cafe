@@ -867,10 +867,16 @@ header{
         text-shadow: 0 1px 10px grey;
 }
 
-.firstRow, .secondRow{
+/*.firstRow, .secondRow{*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    margin-left: 10%;*/
+/*}*/
+.allitems, .firstRow, .secondRow{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 10%;
+}
+.allitems{
+    grid-template-columns:  1fr 1fr;
 }
 
     .healthy_food{
