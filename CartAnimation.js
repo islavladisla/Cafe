@@ -8,12 +8,13 @@ $('.item__description button').on('click', function(){
         .eq(0);
     imgToDrag.clone()
         .offset({
-            top: imgToDrag.offset().top,
-            left: imgToDrag.offset().left,
-            width: '70px',
-            height: '70px',
+            top: imgToDrag.offset().top + 100,
+            left: imgToDrag.offset().left + 100,
+
         }).css({
         position: 'absolute',
+        width: '60px',
+        height: '60px',
         'z-index': '100',
     }).appendTo('.item').animate(
         {

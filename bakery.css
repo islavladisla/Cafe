@@ -109,6 +109,7 @@ a[href*="Menu"] button{
     text-align: center;
     width: 99%;
 }
+
 /*footer*/
 footer{
     background-color: #F5F5F5;
@@ -200,74 +201,6 @@ input[type^="email"]{
 .vertical_menu{
     display:none;
 }
-@media screen and (max-width: 515px) {
-    section {
-        width: 100vw;
-    }
-
-    header .logo {
-        justify-content: flex-start;
-        margin: 8% 0 0 -5%;
-    }
-
-    .logo ul {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 9%;
-        top: 5%;
-        cursor: pointer;
-    }
-
-    .vertical_menu {
-        display: block;
-        position: absolute;
-        width: 52%;
-        top: 0;
-        left: -60%;
-        height: 100vh;
-        /*background-color: #55c2c2;*/
-        background: rgb(251, 212, 190);
-        background: linear-gradient(120deg, rgba(251, 212, 190, 1) 0%, rgba(51, 121, 113, 0.9108018207282913) 49%, rgba(86, 162, 153, 1) 100%);
-        opacity: .8;
-        transition-duration: 1.5s;
-        z-index: 100;
-    }
-
-    .vertical_menu img {
-        position: absolute;
-        top: 0;
-        right: 5%;
-        cursor: pointer;
-    }
-
-    .vertical_menu a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .vertical_menu ul {
-        list-style-type: none;
-        margin: 33% 0 0 -20px;
-    }
-
-    .vertical_menu li {
-        margin-bottom: 20px;
-    }
-
-    .vertical_menu li a {
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-    .vertical_menu ul li a[href="Menu.html"] {
-        font-size: 1.4em;
-        border-bottom: 2px solid black;
-    }
-}
 @media screen and (max-width: 515px){
     section {
         width: 100vw;
@@ -335,6 +268,10 @@ input[type^="email"]{
         font-size: 1.4em;
         border-bottom: 2px solid black;
     }
+.firstRow{
+    display: grid;
+    width: 80%;
+}
     /*footer*/
     footer{
         margin-top: 40%;
@@ -366,12 +303,15 @@ input[type^="email"]{
         margin-top: 20%;
         margin-left: -20%;
     }
+    form{
+        display: flex;
+        margin-bottom: 10%;
+        margin-left: 30%;
+    }
     input[type="image"]{
-        margin-right: 20%;
+        margin-right: -8%;
     }
-    .email_button{
-        display: none;
-    }
+
     .column2, .column3 > p, h3{
         text-align: center;
     }
@@ -379,6 +319,72 @@ input[type^="email"]{
         display: flex;
         justify-content: center;
 
+    }
+
+}
+@media screen and (min-width: 515px) and (max-width: 768px) {
+    .logo ul {
+        display: none;
+    }
+
+    header .logo {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 9%;
+        top: 5%;
+        cursor: pointer;
+    }
+
+    .vertical_menu {
+        display: block;
+        position: absolute;
+        width: 52%;
+        top: 0;
+        left: -60%;
+        height: 100vh;
+        /*background-color: #55c2c2;*/
+        background: rgb(251, 212, 190);
+        background: linear-gradient(120deg, rgba(251, 212, 190, 1) 0%, rgba(51, 121, 113, 0.9108018207282913) 49%, rgba(86, 162, 153, 1) 100%);
+        opacity: .8;
+        transition-duration: 1s;
+        z-index: 100;
+    }
+
+    .vertical_menu img {
+        position: absolute;
+        top: 0;
+        right: 5%;
+        cursor: pointer;
+    }
+
+    .vertical_menu a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .vertical_menu ul {
+        list-style-type: none;
+        margin: 33% 0 0 -20px;
+    }
+
+    .vertical_menu li {
+        margin-bottom: 20px;
+    }
+
+    .vertical_menu li a {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .vertical_menu ul li a[href="Menu.html"] {
+        font-size: 1.4em;
+        border-bottom: 2px solid black;
     }
 
 }

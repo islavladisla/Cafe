@@ -303,12 +303,14 @@ h1{
         margin-top: 20%;
         margin-left: -20%;
     }
+form{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10%;
+}
     input[type="image"]{
-        margin-right: 20%;
-    }
-    .email_button{
-        display: none;
-    }
+         margin-right: 10%;
+     }
     .column2, .column3 > p, h3{
         text-align: center;
     }
@@ -404,4 +406,10 @@ header .logo {
     .dishes{
         margin-bottom: 10%;
     }
+form{
+    margin-left: -17%;
+}
+input[type="image"]{
+    margin-right: 17%;
+}
 }

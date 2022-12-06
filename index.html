@@ -33,7 +33,6 @@
         <img src="image/close.png" alt="closeBtn" width="60" height="60">
     </div>
 
-<script src="VerticalMenuOpening.js"></script>
 
     <header>
         <div class="logo"><a href="index.html" title="Cafe"><img src="image/logo.jpg" alt="logo"></a>
@@ -125,21 +124,6 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing.
 
         </p>
-        <script>
-            let info = document.querySelector('.moreInfo')
-            let btn = document.querySelector('.section.more')
-            btn.addEventListener('click', function(e) {
-                if(info.style.opacity == '0'){
-                    info.style.opacity = '100%'
-                }else{
-                    info.style.opacity = '0'
-                }
-                e.stopPropagation()
-            })
-            document.addEventListener('click', function() {
-                info.style.opacity = "";
-            })
-        </script>
     </section>
 
     <section class="section2">
@@ -171,7 +155,8 @@
     <section class="food">
         <div class='section__description'>
             <h6 class='section__title'>Меню</h6>
-            <h2 class='section__quote'>Популярные блюда</h2></div>
+            <h2 class='section__quote'>Популярные блюда</h2>
+        </div>
 
         <div class="allitems">
             <div class="firstRow">
@@ -192,6 +177,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="item">
                     <img class="item__image" src="image/food2.jpg" alt="product1">
                     <div class="item__description">
@@ -378,6 +364,7 @@
         </footer>
 
 </div>
-
+<script src="VerticalMenuOpening.js"></script>
+<script src="MoreButton.js"></script>
 </body>
 </html>

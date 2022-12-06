@@ -8,7 +8,7 @@
     font-size: 18px;
 }
 body{
-    width: 100vw;
+    width: 95%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -211,10 +211,11 @@ h1{
     position: absolute;
     border: 2px solid red;
     background-color: yellow;
-    top: 90%;
+    top: 108%;
     transition: 1.2s;
     opacity: 0;
     padding: 1%;
+    width: 90%;
 }
 
 /*for all food cards*/
@@ -464,6 +465,8 @@ a[href="Menu.html"]{
 /*Footer*/
 footer{
     background-color: #F5F5F5;
+    margin-top: 10%;
+    width: 100vw;
 }
 .information{
     display: flex;
@@ -773,14 +776,18 @@ width: 89vw;
     margin-left: -20%;
 }
 input[type="image"]{
-    margin-right: 20%;
+    margin-right: 10%;
 }
-.email_button{
-    display: none;
-}
+
 .column2, .column3 > p, h3{
     text-align: center;
 }
+    form{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10%;
+
+    }
 .links_line{
     display: flex;
     justify-content: center;
@@ -849,7 +856,23 @@ header{
     position: absolute;
     left: 40%;
     top: 93%;
+    cursor: pointer;
 }
+    .healthy_food{
+        position: absolute;
+        top: 0;
+        left: 5%;
+        right: 0;
+        z-index: -101;
+        opacity: .5;
+        height: 120%;
+
+    }
+    .healthy_food img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 .section3description__container{
     width: 100%;
     display: flex;
@@ -872,26 +895,25 @@ header{
 /*    grid-template-columns: 1fr 1fr;*/
 /*    margin-left: 10%;*/
 /*}*/
-.allitems, .firstRow, .secondRow{
-    display: grid;
+.food{
+    width: 100%;
 }
 .allitems{
+    display: grid;
     grid-template-columns:  1fr 1fr;
+    height: 100%;
 }
-
-    .healthy_food{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: -101;
-        opacity: .5;
-        height: 100%;
-    }
-    .healthy_food img{
-        object-fit: cover;
-        width: 94%;
-    }
+.firstRow, .secondRow{
+    display: flex;
+    flex-direction: column;
+}
+.firstRow .item, .secondRow .item{
+    height: 330px;
+    width: 90%;
+}
+.item__description {
+    height: 41%;
+}
 .pancake img{
     width: 101%;
     height: 101%;
