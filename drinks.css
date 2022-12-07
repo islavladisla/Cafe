@@ -334,9 +334,12 @@ input[type^="email"]{
         font-size: 1.4em;
         border-bottom: 2px solid black;
     }
-.firstRow{
+.firstRow, .secondRow{
     display: grid;
     grid-row-gap: 2%;
+}
+.firstRow{
+    margin-bottom: 20%;
 }
     /*footer*/
     footer{

@@ -18,7 +18,7 @@ body{
 header .logo{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container{
@@ -37,7 +37,7 @@ header .logo{
     align-content: space-between;
     align-items: center;
     /*justify-content: center;*/
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     padding-left: 0;
     margin-left: 0;
 }
@@ -58,6 +58,8 @@ header .logo{
 .logo ul li {
     margin: 8px;
     font-weight: bold;
+    white-space: nowrap;
+
 }
 
 button{
@@ -69,6 +71,35 @@ button{
     cursor: pointer;
     color: white;
 }
+/*cart*/
+.cart {
+    display: flex;
+    flex-direction: column;
+}
+.cap{
+    position: absolute;
+    top: -46%;
+    right: 0;
+    transform-origin: right;
+}
+.cap img[alt="Cap"]{
+    width: 80px;
+    height: 80px;
+}
+.cart{
+    position: relative;
+}
+.cart img[alt="teapot"] {
+    width: 80px;
+    height: 70px;
+}
+.topLine{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5% 0 5%;
+}
+
+/* end of cart*/
 
 /*section1*/
 .get_started  a{
@@ -180,10 +211,13 @@ h1{
     font-weight: bold;
     margin: 0;
 }
-/*section 3*/
+/*section 2*/
 .service{
     display: flex;
     justify-content: center;
+}
+.service__quality{
+    text-align: center;
 }
 .section3description{
     display: flex;
