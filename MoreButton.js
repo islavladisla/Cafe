@@ -1,13 +1,17 @@
 let info = document.querySelector('.moreInfo')
 let btn = document.querySelector('.section.more')
 btn.addEventListener('click', function(e) {
-    if(info.style.opacity == '0'){
-        info.style.opacity = '100%'
+    let has = info.classList.toggle('press')
+    if(has){
+        info.style.opacity = '1'
     }else{
         info.style.opacity = '0'
     }
-    // e.stopPropagation()
+    e.stopPropagation()
 })
-// document.addEventListener('click', function() {
-//     info.style.opacity = "";
-// })
+document.addEventListener('click', function(e) {
+if(!info.contains(e.target)){
+    info.classList.remove('press')
+    info.style.opacity = '0'
+}
+})
